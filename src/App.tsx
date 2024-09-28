@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import moment from 'moment';
+import './App.css';
 
-// Define interfaces for the props
 interface DateTimeProps {
     date: string;
 }
@@ -71,7 +71,6 @@ function VideoList(props: VideoListProps) {
     );
 }
 
-// Main App component
 export default function App() {
     const [list] = useState<VideoItem[]>([
         {
